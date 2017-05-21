@@ -1,7 +1,17 @@
-language: node_js
+language: csharp
+dist: trusty
+sudo: required
+mono: none
+dotnet: 1.0.0-preview2.1-003177
+mono:
+  - latest
+os:
+  - linux
 node_js:
   - "7"
 install:
+  - nvm install 7.10.0
+  - nvm use 7.10.0
   - npm install standard -g
 script:
   - standard --version
