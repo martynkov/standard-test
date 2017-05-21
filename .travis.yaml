@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "7"
+install:
+  - npm install standard -g
+script:
+  - standard --version
+  - standard test.js --verbose
